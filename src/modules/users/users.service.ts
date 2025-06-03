@@ -34,20 +34,19 @@ export class UsersService {
           createMany: {
             data: [
               // Income
-              { name: 'Salário', icon: 'salary', type: 'INCOME' },
+              { name: 'Salary', icon: 'salary', type: 'INCOME' },
               { name: 'Freelance', icon: 'freelance', type: 'INCOME' },
-              { name: 'Outro', icon: 'other', type: 'INCOME' },
+              { name: 'Other', icon: 'other', type: 'INCOME' },
               // Expense
-              { name: 'Casa', icon: 'home', type: 'EXPENSE' },
-              { name: 'Alimentação', icon: 'food', type: 'EXPENSE' },
-              { name: 'Educação', icon: 'education', type: 'EXPENSE' },
-              { name: 'Lazer', icon: 'fun', type: 'EXPENSE' },
-              { name: 'Mercado', icon: 'grocery', type: 'EXPENSE' },
-              { name: 'Roupas', icon: 'clothes', type: 'EXPENSE' },
-              { name: 'Transporte', icon: 'transport', type: 'EXPENSE' },
-              { name: 'Viagem', icon: 'travel', type: 'EXPENSE' },
-              { name: 'Outro', icon: 'other', type: 'EXPENSE' },
-
+              { name: 'Home', icon: 'home', type: 'EXPENSE' },
+              { name: 'Food', icon: 'food', type: 'EXPENSE' },
+              { name: 'Education', icon: 'education', type: 'EXPENSE' },
+              { name: 'Entertainment', icon: 'fun', type: 'EXPENSE' },
+              { name: 'Groceries', icon: 'grocery', type: 'EXPENSE' },
+              { name: 'Clothes', icon: 'clothes', type: 'EXPENSE' },
+              { name: 'Transport', icon: 'transport', type: 'EXPENSE' },
+              { name: 'Travel', icon: 'travel', type: 'EXPENSE' },
+              { name: 'Other', icon: 'other', type: 'EXPENSE' },
             ]
           }
         }
