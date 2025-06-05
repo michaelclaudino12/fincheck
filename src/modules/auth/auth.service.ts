@@ -24,13 +24,13 @@ export class AuthService {
     });
 
     if(!user) {
-      throw new UnauthorizedException('Invalid credentials'); 
+      throw new UnauthorizedException('Login failed. Please check your email and password.'); 
     }
 
     const isPasswordValid = await compare(password, user.password);
 
     if(!isPasswordValid) {
-      throw new UnauthorizedException('Invalid credentials');
+      throw new UnauthorizedException('Login failed. Please check your email and password.');
     }
 
     const accessToken = this.generateAccessToken(user.id);
