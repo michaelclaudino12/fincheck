@@ -1,11 +1,23 @@
-import { Global, Module } from '@nestjs/common';
-import { PrismaService } from './prisma.service';
-import { UsersRepository } from './repositories/users.repositories';
+import { Global, Module } from '@nestjs/common'
+import { PrismaService } from './prisma.service'
+import { UsersRepository } from './repositories/users.repositories'
+import { CategoriesRepository } from './repositories/categories.repository'
+import { BankAccountsRepository } from './repositories/bank-accounts.repository'
 
 @Global()
 @Module({
-  providers: [PrismaService, UsersRepository],
-  exports: [UsersRepository],	
-})
-export class DatabaseModule {}
+  providers: [
+    PrismaService,
+    UsersRepository,
+    CategoriesRepository,
+    BankAccountsRepository,
 
+  ],
+  exports: [
+    UsersRepository,
+    CategoriesRepository,
+    BankAccountsRepository,
+
+  ],
+})
+export class DatabaseModule { }
